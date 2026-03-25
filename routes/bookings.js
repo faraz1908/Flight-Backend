@@ -3,7 +3,7 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const Booking = require('../models/Booking');
 const Flight = require('../models/Flight');
-const auth = require('../middleware/auth'); // Middleware zaroori hai
+const auth = require('..routes/auth'); // Middleware zaroori hai
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
